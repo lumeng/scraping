@@ -17,7 +17,7 @@ ClearAll[regexData];
 
 regexData["SourceURL", "artron.net"] = RegularExpression["https?://zxp\\.artron\\.net/specials/goods/goodsdetail/[0-9]+"];
 
-regexData["ImageURL", "artron.net"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/\\d+/\\d+/.*\\.jpg"];
+regexData["ImageURL", "artron.net"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/.*/.*\\.jpg"];
 
 Scrape[
     dataEntry_Dataset?(StringQ[#[["url"]]] && StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] &),
@@ -34,16 +34,16 @@ Scrape[
     dataEntry_Dataset?(StringQ[#[["url"]]] && StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] & )
 ] := Composition[
     With[
-        {all = #[[2]][[3;;]], d = #[[1]]},
+        {urls = #[[2]][[3;;]], d = #[[1]]},
         (
             Pause[RandomReal[2]];
             mengDownloadImage[
                 #,
                 "FileBaseName" -> StringJoin[
                     {
-                        d[["author"]],
+                        formatFileNameElement[d[["author"]]],
                         "__",
-                        d[["title"]],
+                        formatFileNameElement[d[["title"]]],
                         "__",
                         Which[
                             StringQ[d[["authoring_date"]]],
@@ -56,9 +56,9 @@ Scrape[
                             DateString["ISODate"]
                         ],
                         "__",
-                        getDomainName[d[["url"]]],
+                        formatFileNameElement[getDomainName[d[["url"]]]],
                         "_",
-                        d[["publisher"]],
+                        formatFileNameElement[d[["publisher"]]],
                         "_",
                         FileNameTake[#, -1]
                     }
@@ -68,7 +68,7 @@ Scrape[
                     RegularExpression["img\\d+\\.artimg\\.net"] -> "artron.net"
                 }
             ]
-        ) & /@ all
+        ) & /@ urls
     ] &,
     {#, Scrape[#, "ImageLinks"]} &
 ][dataEntry];
@@ -77,6 +77,13 @@ getDomainName[url_String] := RightComposition[
     FileNameSplit,
     #[[3]] &
 ][url];
+
+formatFileNameElement[x_] := Switch[
+    x,
+    _Missing, "(missing)",
+    _String, x,
+    _, ToString[x]
+];
 
 End[];
 
