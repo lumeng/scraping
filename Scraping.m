@@ -1,28 +1,84 @@
 (* Wolfram Language Package *)
-(* Created by the Wolfram Language Plugin for IntelliJ, see http://wlplugin.halirutan.de/ *)
 
-(* :Title: Scraping *)
-(* :Context: Scraping` *)
-(* :Author: meng *)
-(* :Date: 2021-01-16 *)
+BeginPackage["Scraping`"];
 
-(* :Package Version: 0.1 *)
-(* :Mathematica Version: 12.1 *)
-(* :Copyright: (c) 2021 meng *)
-(* :Keywords: *)
-(* :Discussion: *)
+Needs["meng`Shared`"];
+Needs["meng`Image`"];
 
-(* For new style packages see: https://mathematica.stackexchange.com/a/176489) *)
-(* Declare package context *)
-Package["Scraping`"]
+Scrape::usage = "Scrape[url] scrapes specific elements from a resource URL.";
 
-(* Import other packages *)
-PackageImport["GeneralUtilities`"]
+Begin[ "Private`"];
 
-(* Keep function package private *)
-PackageScope["privateFunc"]
-privateFunc[x_] := x^2;
 
-(* Export functions *)
-PackageExport["exportedFunc"]
-exportedFunc[] := "Hello World";
+ClearAll[Scrape];
+ClearAll[regexData];
+
+
+
+regexData["SourceURL", "artron.net"] = RegularExpression["https?://zxp\\.artron\\.net/specials/goods/goodsdetail/[0-9]+"];
+
+regexData["ImageURL", "artron.net"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/\\d+/\\d+/.*\\.jpg"];
+
+Scrape[
+    dataEntry_Dataset?(StringQ[#[["url"]]] && StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] &),
+    "ImageLinks"
+] := Composition[
+    {Sort, Identity}[[1]],
+    Flatten,
+    StringCases[#, regexData["ImageURL", "artron.net"]] & /@ # &,
+    Import[#, "ImageLinks"] &,
+    #[["url"]] &
+][dataEntry];
+
+Scrape[
+    dataEntry_Dataset?(StringQ[#[["url"]]] && StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] & )
+] := Composition[
+    With[
+        {all = #[[2]][[3;;]], d = #[[1]]},
+        (
+            Pause[RandomReal[2]];
+            mengDownloadImage[
+                #,
+                "FileBaseName" -> StringJoin[
+                    {
+                        d[["author"]],
+                        "__",
+                        d[["title"]],
+                        "__",
+                        Which[
+                            StringQ[d[["authoring_date"]]],
+                            d[["authoring_date"]],
+                            StringQ[d[["publishing_date"]]],
+                            d[["publishing_date"]],
+                            StringQ[d[["retrieving_date"]]],
+                            d[["retrieving_date"]],
+                            True,
+                            DateString["ISODate"]
+                        ],
+                        "__",
+                        getDomainName[d[["url"]]],
+                        "_",
+                        d[["publisher"]],
+                        "_",
+                        FileNameTake[#, -1]
+                    }
+                ],
+                "Subdirectory" -> {getDomainName[d[["url"]]]},
+                "FileNameRenameRules" -> {
+                    RegularExpression["img\\d+\\.artimg\\.net"] -> "artron.net"
+                }
+            ]
+        ) & /@ all
+    ] &,
+    {#, Scrape[#, "ImageLinks"]} &
+][dataEntry];
+
+getDomainName[url_String] := RightComposition[
+    FileNameSplit,
+    #[[3]] &
+][url];
+
+End[];
+
+EndPackage[];
+
