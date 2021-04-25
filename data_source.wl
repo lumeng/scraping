@@ -1,6 +1,228 @@
 (* Mathematica Source File *)
 <|
-
+    "范增_达摩神悟图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1397924",
+	"title" -> "达摩神悟图",
+	"author" -> "范增",
+        "authoring_date" -> "乙酉",
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_落纸烟云-中国书画专场",
+	"dimension_height" -> Quantity[137, "Centimeters"],
+	"dimension_width" -> Quantity[68, "Centimeters"],
+	"piece_count" -> 4
+   |>,
+    "吴昌硕_花卉四屏" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1397942",
+	"title" -> "花卉四屏",
+	"author" -> "吴昌硕",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_落纸烟云-中国书画专场",
+	"dimension_height" -> Quantity[138, "Centimeters"],
+	"dimension_width" -> Quantity[33, "Centimeters"],
+	"piece_count" -> 4
+   |>,
+    "娄师白_紫藤蜜蜂" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1397960",
+	"title" -> "紫藤蜜蜂",
+	"author" -> "娄师白",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_落纸烟云-中国书画专场",
+	"dimension_height" -> Quantity[95, "Centimeters"],
+	"dimension_width" -> Quantity[46, "Centimeters"]
+   |>,
+    "舒同_草书六屏" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1397912",
+	"title" -> "草书六屏",
+	"author" -> "舒同",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_落纸烟云-中国书画专场",
+	"dimension_height" -> Quantity[137, "Centimeters"],
+	"dimension_width" -> Quantity[33, "Centimeters"],
+	"piece_count" -> 6
+    |>,
+    "霍春阳_梅花双鸟图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411490",
+	"title" -> "梅花双鸟图",
+	"author" -> "霍春阳",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[38, "Centimeters"],
+	"dimension_width" -> Quantity[45, "Centimeters"]
+    |>,
+    "乐之_人物图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411506",
+	"title" -> "人物图",
+	"author" -> "乐之",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[33, "Centimeters"],
+	"dimension_width" -> Quantity[131, "Centimeters"]
+    |>,
+    "齐白石_得利图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411514",
+	"title" -> "得利图",
+	"author" -> "齐白石",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[91, "Centimeters"],
+	"dimension_width" -> Quantity[49, "Centimeters"]
+    |>,
+    "谢稚柳_梅竹双清图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411492",
+	"title" -> "梅竹双清图",
+	"author" -> "谢稚柳",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[33, "Centimeters"],
+	"dimension_width" -> Quantity[139, "Centimeters"]
+    |>,
+    "王雪涛_萱草螽斯图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411498",
+	"title" -> "萱草螽斯图",
+	"author" -> "王雪涛",
+        "authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[115, "Centimeters"],
+	"dimension_width" -> Quantity[34, "Centimeters"]
+    |>,
+    "陈树人_秋意图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411463u3",
+	"title" -> "秋意图",
+	"author" -> "陈树人",
+        "authoring_date" ->  DateObject[{1947}],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[54, "Centimeters"],
+	"dimension_width" -> Quantity[44, "Centimeters"]
+    |>,
+    "启功_窺園聖學傳繁霧，納履玄機獲素書" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411504",
+	"title" -> "窺園聖學傳繁霧，納履玄機獲素書",
+	"author" -> "启功",
+	"authoring_date" -> DateObject[{1986}],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_嘉荷堂一名家书画专场（三）",
+	"dimension_height" -> Quantity[68, "Centimeters"],
+	"dimension_width" -> Quantity[45, "Centimeters"]
+    |>,
+    "郑板桥_兰花" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411204",
+	"title" -> "兰花",
+	"author" -> "郑板桥",
+	"authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_翰墨典藏—中国书画专场（十四）",
+	"dimension_height" -> Quantity[48, "Centimeters"],
+	"dimension_width" -> Quantity[177, "Centimeters"]
+    |>,
+    "沈尹默_剑门天下险" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411158",
+	"title" -> "剑门天下险",
+	"author" -> "沈尹默",
+	"authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_翰墨典藏—中国书画专场（十四）",
+	"dimension_height" -> Quantity[132.5, "Centimeters"],
+	"dimension_width" -> Quantity[69, "Centimeters"]
+    |>,
+    "潘天寿_花鸟手卷" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411198",
+	"title" -> "花鸟手卷",
+	"author" -> "潘天寿",
+	"authoring_date" -> DateObject[{1956}],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_翰墨典藏—中国书画专场（十四）",
+	"dimension_height" -> Quantity[30, "Centimeters"],
+	"dimension_width" -> Quantity[246, "Centimeters"]
+    |>,
+    "王震_松菊图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411186",
+	"title" -> "松菊图",
+	"author" -> "王震",
+	"authoring_date" -> DateObject[{1915}],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_翰墨典藏—中国书画专场（十四）",
+	"dimension_height" -> Quantity[148, "Centimeters"],
+	"dimension_width" -> Quantity[62, "Centimeters"]
+    |>,
+    "宋美龄_大寿" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411210",
+	"title" -> "大寿",
+	"author" -> "宋美龄",
+	"authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_翰墨典藏—中国书画专场（十四）",
+	"dimension_height" -> Quantity[93, "Centimeters"],
+	"dimension_width" -> Quantity[44, "Centimeters"]
+    |>,
+    "李鱓_岁朝清供" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1411206",
+	"title" -> "岁朝清供",
+	"author" -> "李鱓",
+	"authoring_date" -> DateObject[{1747}],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_翰墨典藏—中国书画专场（十四）",
+	"dimension_height" -> Quantity[47, "Centimeters"],
+	"dimension_width" -> Quantity[178, "Centimeters"]
+    |>,
+    "林散之_自画像" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1420297",
+	"title" -> "自画像",
+	"author" -> "林散之；赵朴初（题跋）",
+	"authoring_date" -> "己未",
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_唯艺集珍-中国名家书画专场",
+	"dimension_height" -> Quantity[133, "Centimeters"],
+	"dimension_width" -> Quantity[34, "Centimeters"]
+    |>,
+    "杨晋_嵩山品茗图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1420307",
+	"title" -> "嵩山品茗图",
+	"author" -> "杨晋；朱彝尊、黄元瑶（题边跋）",
+	"authoring_date" -> "己卯",
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_唯艺集珍-中国名家书画专场",
+	"dimension_height" -> Quantity[30, "Centimeters"],
+	"dimension_width" -> Quantity[100, "Centimeters"]
+    |>,
+    "吴湖帆_风竹图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1420265",
+	"title" -> "风竹图",
+	"author" -> "吴湖帆",
+	"authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_唯艺集珍-中国名家书画专场",
+	"dimension_height" -> Quantity[66.5, "Centimeters"],
+	"dimension_width" -> Quantity[22.5, "Centimeters"]
+    |>,
+    "徐操_罗汉图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1420329",
+	"title" -> "罗汉图",
+	"author" -> "徐操",
+	"authoring_date" -> Missing["NotAvailable"],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_唯艺集珍-中国名家书画专场",
+	"dimension_height" -> Quantity[60.5, "Centimeters"],
+	"dimension_width" -> Quantity[36, "Centimeters"]
+    |>,
+    "黄山寿_五子捧寿图" -> <|
+	"data_source_domain" -> "https://zxp.artron.net",
+	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1420327",
+	"title" -> "五子捧寿图",
+	"author" -> "黄山寿",
+	"authoring_date" -> DateObject[{1911}],
+	"publisher" -> "雅昌得藏在线拍(zxp.artron.net)_唯艺集珍-中国名家书画专场",
+	"dimension_height" -> Quantity[134, "Centimeters"],
+	"dimension_width" -> Quantity[66, "Centimeters"]
+    |>,
     "李方膺_山水" -> <|
 	"data_source_domain" -> "https://zxp.artron.net",
 	"url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1420293",
