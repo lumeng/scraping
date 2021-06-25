@@ -12,6 +12,7 @@ Begin[ "Private`"];
 
 ClearAll[Scrape];
 ClearAll[regexData];
+ClearAll[formatFileNameElement];
 
 (******************************************************************************)
 
@@ -59,20 +60,20 @@ Scrape[
                         IntegerString[First[Position[urls, #]]],
                         "__",
                         Which[
-                            DateObjectQ[d[["authoring_date"]]],
-                            DateString[d[["authoring_date"]], "ISODate"],
-                            StringQ[d[["authoring_date"]]],
-                            d[["authoring_date"]],
-                            DateObjectQ[d[["publishing_date"]]],
-                            DateString[d[["publishing_date"]], "ISODate"],
-                            StringQ[d[["publishing_date"]]],
-                            d[["publishing_date"]],
-                            DateObjectQ[d[["retrieving_date"]]],
-                            DateString[d[["retrieving_date"]], "ISODate"],
-                            StringQ[d[["retrieving_date"]]],
-                            d[["retrieving_date"]],
+                            DateObjectQ[Normal[d[["authoring_date"]]]],
+                            DateString[Normal[d[["authoring_date"]]], "ISODate"],
+                            StringQ[Normal[d[["authoring_date"]]]],
+                            Normal[d[["authoring_date"]]],
+                            DateObjectQ[Normal[d[["publishing_date"]]]],
+                            DateString[Normal[d[["publishing_date"]]], "ISODate"],
+                            StringQ[Normal[d[["publishing_date"]]]],
+                            Normal[d[["publishing_date"]]],
+                            DateObjectQ[Normal[d[["retrieving_date"]]]],
+                            DateString[Normal[d[["retrieving_date"]]], "ISODate"],
+                            StringQ[Normal[d[["retrieving_date"]]]],
+                            Normal[d[["retrieving_date"]]],
                             True,
-                            DateString["ISODate"]
+                            DateString["ISODate"] <> "_(retrieved)"
                         ],
                         "__",
                         formatFileNameElement[getDomainName[d[["url"]]]],
@@ -140,22 +141,21 @@ Scrape[
                         IntegerString[First[Position[urls, #]]],
                         "__",
                         Which[
-                            DateObjectQ[d[["authoring_date"]]],
-                            DateString[d[["authoring_date"]], "ISODate"],
-                            StringQ[d[["authoring_date"]]],
-                            d[["authoring_date"]],
-                            DateObjectQ[d[["publishing_date"]]],
-                            DateString[d[["publishing_date"]], "ISODate"],
-                            StringQ[d[["publishing_date"]]],
-                            d[["publishing_date"]],
-                            DateObjectQ[d[["retrieving_date"]]],
-                            DateString[d[["retrieving_date"]], "ISODate"],
-                            StringQ[d[["retrieving_date"]]],
-                            d[["retrieving_date"]],
+                            DateObjectQ[Normal[d[["authoring_date"]]]],
+                            DateString[Normal[d[["authoring_date"]]], "ISODate"],
+                            StringQ[Normal[d[["authoring_date"]]]],
+                            Normal[d[["authoring_date"]]],
+                            DateObjectQ[Normal[d[["publishing_date"]]]],
+                            DateString[Normal[d[["publishing_date"]]], "ISODate"],
+                            StringQ[Normal[d[["publishing_date"]]]],
+                            Normal[d[["publishing_date"]]],
+                            DateObjectQ[Normal[d[["retrieving_date"]]]],
+                            DateString[Normal[d[["retrieving_date"]]], "ISODate"],
+                            StringQ[Normal[d[["retrieving_date"]]]],
+                            Normal[d[["retrieving_date"]]],
                             True,
-                            DateString["ISODate"]
-                        ],
-                        "__",
+                            DateString["ISODate"] <> "(retrieved)"
+                        ],                        "__",
                         formatFileNameElement[getDomainName[d[["url"]]]],
                         "_",
                         formatFileNameElement[d[["publisher"]]],
@@ -177,6 +177,8 @@ getDomainName[url_String] := RightComposition[
     FileNameSplit,
     #[[3]] &
 ][url];
+
+formatFileNameElement[x_Dataset] := formatFileNameElement[Normal[x]];
 
 formatFileNameElement[x_] := Switch[
     x,
