@@ -163,7 +163,7 @@ Scrape[
                         FileNameTake[#, -1]
                     }
                 ],
-                "Subdirectory" -> {getDomainName[d[["url"]]]},
+                "Subdirectory" -> {"topic", getDomainName[d[["url"]]]},
                 "FileNameRenameRules" -> {
                     RegularExpression["img\\d+\\.artimg\\.net"] -> "artron.net"
                 }
