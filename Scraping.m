@@ -195,6 +195,37 @@ Scrape[
 
 
 
+(******************************************************************************)
+(* http://g2.ltfc.net *)
+(* example: http://g2.ltfc.net/pageview?id=608986c399d736503894476b&src=SUHA
+*)
+
+regexData["SourceURL", "g2.ltfc.net"] = RegularExpression["https?://g2\\.ltfc\\.net/.*"];
+
+(* example: https://cag.ltfc.net/cagstore/5aeca57e54abff7ca62f5d43/16/0_0.jpg?&sign=22fe45a91a279c9af61f25e489233588&t=61be7600 *)
+regexData["ImageURL", "g2.ltfc.net"] = RegularExpression["https?://cag\\.ltfc\\.net/cagstore/[0-9a-z]+/\\d+/\\d_\\d\\.(jpg|jpeg|png)\\?&sign=[0-9a-z]+&t=[0-9a-z]+"];
+
+With[
+    {url = "https://cag.ltfc.net/cagstore/5aeca57e54abff7ca62f5d43/16/0_0.jpg?&sign=22fe45a91a279c9af61f25e489233588&t=61be7600"},
+    Assert[StringMatchQ[url, regexData["ImageURL", "g2.ltfc.net"]]]
+];
+
+Scrape[
+    dataEntry_Dataset?(StringQ[#[["url"]]]
+        && StringMatchQ[#[["url"]], regexData["SourceURL", "g2.ltfc.net"]] &),
+    "ImageLinks"
+] := Composition[
+    {Sort, Identity}[[2]],
+    DeleteDuplicates,
+    Flatten,
+    Cases[#, XMLElement["img", {"id" -> "bigPic", "src" -> imgURL_String, ___}, {}] :> imgURL, Infinity] &,
+    Import[#, "XMLObject"] &,
+    #[["url"]] &
+][dataEntry];
+
+(******************************************************************************)
+(* helpers *)
+
 getDomainName[url_String] := RightComposition[
     FileNameSplit,
     #[[3]] &
