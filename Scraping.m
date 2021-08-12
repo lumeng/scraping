@@ -15,17 +15,11 @@ ClearAll[regexData];
 ClearAll[formatFileNameElement];
 
 (******************************************************************************)
+(* macaulaylibrary.org *)
 
 regexData["SourceURL", "macaulaylibrary.org"] = RegularExpression["https?://macaulaylibrary\\.org/asset/[0-9]+"];
 
-regexData["ImageURL", "macaulaylibrary.org"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/.*/.*\\.jpg"];
-
-regexData["SourceURL", "artron.net"] = RegularExpression["https?://zxp\\.artron\\.net/specials/goods/goodsdetail/[0-9]+"];
-
-regexData["ImageURL", "artron.net"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/.*/.*\\.jpg"];
-
-(******************************************************************************)
-(* macaulaylibrary.org *)
+regexData["ImageURL", "macaulaylibrary.org"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/.*/.*\\.(jpg|jpeg|png)"];
 
 Scrape[
     dataEntry_Dataset?(StringQ[#[["url"]]]
@@ -109,6 +103,10 @@ Scrape[
 (******************************************************************************)
 (* artron.net *)
 
+regexData["SourceURL", "artron.net"] = RegularExpression["https?://zxp\\.artron\\.net/specials/goods/goodsdetail/[0-9]+"];
+
+regexData["ImageURL", "artron.net"] = RegularExpression["https?://img\\d+\\.artimg\\.net/zxp/auctions/.*/.*\\.(jpg|jpeg|png)"];
+
 Scrape[
     dataEntry_Dataset?(StringQ[#[["url"]]]
     && StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] &),
@@ -124,7 +122,8 @@ Scrape[
 
 Scrape[
     dataEntry_Dataset?(StringQ[#[["url"]]]
-    && StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] & )
+    && (StringMatchQ[#[["url"]], regexData["SourceURL", "artron.net"]] ||
+        StringMatchQ[#[["url"]], regexData["SourceURL", "gallery.artron.net"]] )& )
 ] := Composition[
     With[
         {urls = #[[2]][[;;]], d = #[[1]]},
@@ -172,6 +171,29 @@ Scrape[
     ] &,
     {#, Scrape[#, "ImageLinks"]} &
 ][dataEntry];
+
+
+(******************************************************************************)
+(* gallery.artron.net *)
+
+regexData["SourceURL", "gallery.artron.net"] = RegularExpression["https?://gallery\\.artron\\.net/works/.*"];
+
+regexData["ImageURL", "gallery.artron.net"] = RegularExpression["https?://img\\d+.artimg.net/gallery/.*/.*\\d+\\.(jpg|jpeg|png)"];
+
+Scrape[
+    dataEntry_Dataset?(StringQ[#[["url"]]]
+        && StringMatchQ[#[["url"]], regexData["SourceURL", "gallery.artron.net"]] &),
+    "ImageLinks"
+] := Composition[
+    {Sort, Identity}[[2]],
+    DeleteDuplicates,
+    Flatten,
+    Cases[#, XMLElement["img", {"id" -> "bigPic", "src" -> imgURL_String, ___}, {}] :> imgURL, Infinity] &,
+    Import[#, "XMLObject"] &,
+    #[["url"]] &
+][dataEntry];
+
+
 
 getDomainName[url_String] := RightComposition[
     FileNameSplit,
