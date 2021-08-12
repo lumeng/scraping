@@ -1,12 +1,152 @@
 (* Mathematica Source File *)
 <|
+    "徐婧《粉色心情》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585067",
+        "title" -> "粉色心情",
+        "author" -> "徐婧",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[50, "Centimeters"],
+        "dimension_width" -> Quantity[40, "Centimeters"]
+    |>,
+    "王胜利《春江水》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585069",
+        "title" -> "春江水",
+        "author" -> "王胜利",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[50, "Centimeters"],
+        "dimension_width" -> Quantity[50, "Centimeters"]
+    |>,
+    "杨帆《青花瓷与水仙》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585055",
+        "title" -> "青花瓷与水仙",
+        "author" -> "杨帆",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[60, "Centimeters"],
+        "dimension_width" -> Quantity[45, "Centimeters"]
+    |>,
+    "王树田《清溪》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585053",
+        "title" -> "清溪",
+        "author" -> "王树田",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[70, "Centimeters"],
+        "dimension_width" -> Quantity[40, "Centimeters"]
+    |>,
+    "徐婧《静物花》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585045",
+        "title" -> "静物花",
+        "author" -> "徐婧",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[50, "Centimeters"],
+        "dimension_width" -> Quantity[40, "Centimeters"]
+    |>,
+    "徐婧《岁月静好》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585063",
+        "title" -> "岁月静好",
+        "author" -> "徐婧",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[50, "Centimeters"],
+        "dimension_width" -> Quantity[40, "Centimeters"]
+    |>,
+    "徐静《白菜》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585049",
+        "title" -> "白菜",
+        "author" -> "徐静",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_清新悦尔精选西画作品特惠专场",
+        "dimension_height" -> Quantity[40, "Centimeters"],
+        "dimension_width" -> Quantity[40, "Centimeters"]
+    |>,
+    "启功《双清图》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585953",
+        "title" -> "双清图",
+        "author" -> "启功",
+        "authoring_date" -> DateObject[{2002}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_“书与画”——手绘画集扉页作品专场",
+        "dimension_height" -> Quantity[29, "Centimeters"],
+        "dimension_width" -> Quantity[41, "Centimeters"]
+    |>,
+    "吴庆丰中国画《吉祥如意》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1564417",
+        "title" -> "吉祥如意",
+        "author" -> "吴庆丰",
+        "authoring_date" -> DateObject[{2021}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_“翰墨神韵”——当代书画专场",
+        "dimension_height" -> Quantity[126, "Centimeters"],
+        "dimension_width" -> Quantity[46, "Centimeters"]
+    |>,
+    "吴庆丰中国画《群鱼乐》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1564433",
+        "title" -> "群鱼乐",
+        "author" -> "吴庆丰",
+        "authoring_date" -> DateObject[{2021}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_“翰墨神韵”——当代书画专场",
+        "dimension_height" -> Quantity[68, "Centimeters"],
+        "dimension_width" -> Quantity[46, "Centimeters"]
+    |>,
+    "张大中油画《硝烟过后》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1586437",
+        "title" -> "硝烟过后",
+        "author" -> "张大中",
+        "authoring_date" -> DateObject[{2020}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_红色岁月张大中作品专场",
+        "dimension_height" -> Quantity[67.5, "Centimeters"],
+        "dimension_width" -> Quantity[50, "Centimeters"]
+    |>,
+    "张大中油画《领悟》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1586429",
+        "title" -> "领悟",
+        "author" -> "张大中",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_红色岁月张大中作品专场",
+        "dimension_height" -> Quantity[65, "Centimeters"],
+        "dimension_width" -> Quantity[50, "Centimeters"]
+    |>,
+    "张大中油画《心曲》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1586435",
+        "title" -> "心曲",
+        "author" -> "张大中",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_红色岁月张大中作品专场",
+        "dimension_height" -> Quantity[65, "Centimeters"],
+        "dimension_width" -> Quantity[50, "Centimeters"]
+    |>,
+    "冷军_新竹旧香" -> <|
+        "data_source_domain" -> "https://gallery.artron.net",
+        "url" -> "https://gallery.artron.net/works/639_w358354.html",
+        "title" -> "新竹旧香",
+        "author" -> "冷军",
+        "authoring_date" -> DateObject[{2011}],
+        "publisher" -> "画廊频道(gallery.artron.net)_武汉荣宝斋",
+        "dimension_height" -> Quantity[80, "Centimeters"],
+        "dimension_width" -> Quantity[68, "Centimeters"]
+    |>,
     "邹振亚_篆书陈毅再过旧黄河诗" -> <|
         "data_source_domain" -> "https://zxp.artron.net",
         "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1565977",
         "title" -> "篆书陈毅〈再过旧黄河〉诗条屏",
         "author" -> "邹振亚",
         "authoring_date" -> Missing["NotAvailable"],
-        "publisher" -> "雅昌得藏在线拍(zxp.artron.net)_6·18艺术一点 独一无二的品味之选—名家珍藏书法专场",
+        "publisher" -> "画廊频道(zxp.artron.net)_6·18艺术一点 独一无二的品味之选—名家珍藏书法专场",
         "dimension_height" -> Quantity[130, "Centimeters"],
         "dimension_width" -> Quantity[38, "Centimeters"]
     |>,
