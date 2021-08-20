@@ -1,5 +1,76 @@
 (* Mathematica Source File *)
 <|
+    "张大千《南无观音大士像》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1600249",
+        "title" -> "南无观音大士像",
+        "author" -> "张大千",
+        "authoring_date" -> DateObject[{1947, 2, 19}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_大观-名家墨缘书画专场（十七）",
+        "dimension_height" -> Quantity[132, "Centimeters"],
+        "dimension_width" -> Quantity[65, "Centimeters"]
+    |>,
+    "魏琪乐《鸟语花香》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1617866",
+        "title" -> "鸟语花香",
+        "author" -> "魏琪乐",
+        "authoring_date" -> DateObject[{2021}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_争妍——工笔花鸟作品专场",
+        "dimension_height" -> Quantity[65, "Centimeters"],
+        "dimension_width" -> Quantity[65, "Centimeters"]
+    |>,
+    "王西京《钟馗》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1603663",
+        "title" -> "钟馗",
+        "author" -> "王西京",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_丹青溢彩-旧藏中国书画专场",
+        "dimension_height" -> Quantity[134, "Centimeters"],
+        "dimension_width" -> Quantity[68, "Centimeters"]
+    |>,
+    "于非闇《喜鹊红竹图》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1603661",
+        "title" -> "喜鹊红竹图",
+        "author" -> "于非闇",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_丹青溢彩-旧藏中国书画专场",
+        "dimension_height" -> Quantity[86, "Centimeters"],
+        "dimension_width" -> Quantity[28, "Centimeters"]
+    |>,
+    "齐白石《鹤寿》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1603667",
+        "title" -> "鹤寿",
+        "author" -> "齐白石",
+        "authoring_date" -> Missing["NotAvailable"],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_丹青溢彩-旧藏中国书画专场",
+        "dimension_height" -> Quantity[20, "Centimeters"],
+        "dimension_width" -> Quantity[16, "Centimeters"],
+        "piece_count" -> 6
+    |>,
+    "张大千《泉明高致》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1609094",
+        "title" -> "泉明高致",
+        "author" -> "张大千",
+        "authoring_date" -> DateObject[{1961}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_读书屋-旧藏书画专场",
+        "dimension_height" -> Quantity[83, "Centimeters"],
+        "dimension_width" -> Quantity[30, "Centimeters"]
+    |>,
+    "彦生《春风得意》" -> <|
+        "data_source_domain" -> "https://zxp.artron.net",
+        "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1593919",
+        "title" -> "春风得意",
+        "author" -> "彦生",
+        "authoring_date" -> "乙酉年",
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_四海集珍-中国书画专场",
+        "dimension_height" -> Quantity[131, "Centimeters"],
+        "dimension_width" -> Quantity[66, "Centimeters"]
+    |>,
     "徐婧《粉色心情》" -> <|
         "data_source_domain" -> "https://zxp.artron.net",
         "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1585067",
