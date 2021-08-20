@@ -1,5 +1,18 @@
 (* Mathematica Source File *)
 <|
+(*
+    "【作者】〈【标题】〉" -> <|
+        "data_source_domain" -> 【Data_source_url_domain】,
+        "source" -> 【source】,
+        "url" -> 【source】,
+        "title" -> "鸟语花香",
+        "author" -> "魏琪乐",
+        "authoring_date" -> DateObject[{2021}],
+        "publisher" -> "雅昌拍卖(zxp.artron.net)_争妍——工笔花鸟作品专场",
+        "dimension_height" -> Quantity[65, "Centimeters"],
+        "dimension_width" -> Quantity[65, "Centimeters"]
+    |>,
+*)
     "张大千《南无观音大士像》" -> <|
         "data_source_domain" -> "https://zxp.artron.net",
         "url" -> "https://zxp.artron.net/specials/goods/goodsdetail/1600249",
