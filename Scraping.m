@@ -48,9 +48,9 @@ Scrape[
                 "FileBaseName" -> StringJoin[
                     {
                         formatFileNameElement[d[["author"]]],
-                        "__",
+                        "__〈",
                         formatFileNameElement[d[["title"]]],
-                        "_",
+                        "〉_",
                         IntegerString[First[Position[urls, #]]],
                         "__",
                         Which[
@@ -134,9 +134,9 @@ Scrape[
                 "FileBaseName" -> StringJoin[
                     {
                         formatFileNameElement[d[["author"]]],
-                        "__",
+                        "__〈",
                         formatFileNameElement[d[["title"]]],
-                        "_",
+                        "〉_",
                         IntegerString[First[Position[urls, #]]],
                         "__",
                         Which[
